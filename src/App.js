@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
+import ContactForm from "./components/Contact";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
@@ -7,6 +8,8 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+
   const [directories] = useState([
     {
       title: "e-commerce",
@@ -41,10 +44,19 @@ function App() {
         directories={directories}
         directoryState={directoryState}
         setDirectoryState={setDirectoryState}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
+
       <main>
-        <Projects directoryState={directoryState}></Projects>
-        <About></About>
+        {!contactSelected ? (
+          <>
+            <Projects directoryState={directoryState}></Projects>
+            <About></About>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )}
       </main>
       <Footer></Footer>
     </div>
