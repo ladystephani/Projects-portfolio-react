@@ -35,6 +35,28 @@ function App() {
       githubLink: "https://github.com/ladystephani/DiscoverEats",
       deployedlink: "https://ladystephani.github.io/DiscoverEats/",
     },
+    {
+      title: "scheduler",
+      name: "Work-day Schedule Planner",
+      technologies: "HTML, CSS, Javascript, jQuery",
+      githubLink: "http://github.com/ladystephani/WorkDayScheduler-assignment5",
+      deployedlink:
+        "https://ladystephani.github.io/WorkDayScheduler-assignment5/",
+    },
+    {
+      title: "quiz",
+      name: "coding quiz",
+      technologies: "HTML, CSS, Javascript",
+      githubLink: "http://github.com/ladystephani/CodingQuiz-app-assignment4",
+      deployedlink: "http://ladystephani.github.io/CodingQuiz-app-assignment4",
+    },
+    {
+      title: "repository-search",
+      name: "Open-source-work",
+      technologies: "HTML, CSS, Javascript, GitHub API",
+      githubLink: "https://github.com/ladystephani/Open-source-work",
+      deployedlink: "https://ladystephani.github.io/Open-source-work/",
+    },
   ]);
   const [directoryState, setDirectoryState] = useState(directories[0]);
 

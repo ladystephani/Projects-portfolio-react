@@ -16,6 +16,18 @@ function PhotoList({ directory, directoryState }) {
       name: "mainpage",
       directory: "food-search",
     },
+    {
+      name: "mainpage",
+      directory: "scheduler",
+    },
+    {
+      name: "mainpage",
+      directory: "quiz",
+    },
+    {
+      name: "mainpage",
+      directory: "repository-search",
+    },
   ]);
   const currentPhotos = photos.filter((photo) => photo.directory === directory);
 
