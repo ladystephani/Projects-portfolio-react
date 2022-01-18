@@ -24,9 +24,7 @@ function Nav(props) {
           <li className={`mx-2 ${contactSelected && "navActive"}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
           </li>
-          <li className="mx-2">
-            <span>Resume</span>
-          </li>
+
           {directories.map((directory) => (
             <li
               className={`mx-1 ${
