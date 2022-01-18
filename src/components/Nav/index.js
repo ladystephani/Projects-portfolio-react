@@ -1,6 +1,8 @@
 import React from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
+function Nav(props) {
+  const { directories = [], directoryState, setDirectoryState } = props;
   return (
     <header>
       <h2>
@@ -17,9 +19,22 @@ function Nav() {
           <li className="mx-2">
             <span>Resume</span>
           </li>
-          <li className="mx-2">
-            <a href="#projects">Portfolio</a>
-          </li>
+          {directories.map((directory) => (
+            <li
+              className={`mx-1 ${
+                directoryState.title === directory.title && "navActive"
+              } `}
+              key={directory.title}
+            >
+              <span
+                onClick={() => {
+                  setDirectoryState(directory);
+                }}
+              >
+                {capitalizeFirstLetter(directory.title)}
+              </span>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

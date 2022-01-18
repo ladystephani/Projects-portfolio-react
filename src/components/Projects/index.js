@@ -1,16 +1,12 @@
 import React from "react";
-import parkImg from "../../assets/projects/findParks_app.png";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Projects() {
+function Projects({ directoryState }) {
+  const { title, technologies, githublink } = directoryState;
   return (
     <div className="my5">
-      <h3 id="projects">Projects</h3>
-      <img
-        src={parkImg}
-        className="my-2"
-        style={{ width: "100%" }}
-        alt="project-park"
-      ></img>
+      <h3>{capitalizeFirstLetter(title)}</h3>
+      <p>{technologies}</p>
     </div>
   );
 }
