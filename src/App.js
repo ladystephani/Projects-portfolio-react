@@ -12,6 +12,14 @@ function App() {
 
   const [directories] = useState([
     {
+      title: "review-blog",
+      name: "LiveMusicGeek",
+      technologies:
+        "Node.js, Express.js, JavaScript, Mongoose, React, graphQL, apollo-server-express, @apollo/client, jsonwebtoken, jwt-decode, Nodemon, Heroku",
+      githubLink: "https://github.com/ladystephani/LiveMusicGeek",
+      deployedlink: "https://livemusicgeek.herokuapp.com/",
+    },
+    {
       title: "e-commerce",
       name: "Smagums Store",
       technologies:

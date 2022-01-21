@@ -4,6 +4,10 @@ function PhotoList({ directory, directoryState }) {
   const [photos] = useState([
     {
       name: "homepage",
+      directory: "review-blog",
+    },
+    {
+      name: "homepage",
       directory: "e-commerce",
     },
 
