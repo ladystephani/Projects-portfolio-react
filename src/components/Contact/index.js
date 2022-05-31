@@ -42,8 +42,9 @@ function ContactForm() {
   }
   return (
     <div>
+      <p>Email me at li.jessiezheqi@hotmail.com</p>
       <div>
-        <h1>Send me a message!</h1>
+        <h1>Or send me a message!</h1>
         <form id="contact-form" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
