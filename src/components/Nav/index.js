@@ -1,5 +1,6 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
+import resumeFile from "../../assets/resume/Resume_JessieLi.pdf";
 
 function Nav(props) {
   const {
@@ -19,6 +20,11 @@ function Nav(props) {
           <li className="mx-2">
             <a href="#about" onClick={() => setContactSelected(false)}>
               About me
+            </a>
+          </li>
+          <li>
+            <a href={resumeFile} target="_blank">
+              Resume
             </a>
           </li>
           <li className={`mx-2 ${contactSelected && "navActive"}`}>
