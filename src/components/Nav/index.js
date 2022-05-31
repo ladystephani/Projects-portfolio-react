@@ -10,9 +10,9 @@ function Nav(props) {
     setContactSelected,
   } = props;
   return (
-    <header>
+    <header className="flex-row">
       <h2>
-        <a href="/">JESSIE LI</a>
+        <a href="/">Jessie Li</a>
       </h2>
       <nav>
         <ul className="flex-row">
