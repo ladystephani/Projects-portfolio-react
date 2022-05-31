@@ -98,6 +98,10 @@ header a {
   font-family: "Brush Script MT", cursive;
 }
 
+footer {
+  font-family: "Montserrat", sans-serif;
+}
+
 button {
   font-size: 1rem;
   text-decoration: none;
